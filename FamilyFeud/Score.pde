@@ -6,7 +6,7 @@ public class Score{
   public String  surname;
   
   Score(Integer x, Integer y, String surname){
-    scoreValue = 999;
+    scoreValue = 0;
     this.x = x;
     this.y = y;
     this.surname = surname;
@@ -28,4 +28,10 @@ public class Score{
       popStyle(); 
     popMatrix();
   }
+  
+  void upScore(){
+    this.scoreValue += 10;
+  }
+  
+
 }
